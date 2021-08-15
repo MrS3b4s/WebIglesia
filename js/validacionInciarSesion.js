@@ -12,7 +12,7 @@ const regex = {
     //Al menos un personaje especial, (?=.*?[#?!@$%^&*-])
     //Mínimo ocho de longitud .{8,}(con los anclajes)
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+	telefono: /^[5-9]\d{3}-?\d{4}$/, 
 	cedula: /^[1-9]-\d{4}-\d{4}$/,
 	numeros: /^[1-9]{1,5}$/ //Numeros del 1 al 9, de 1 a 5 digitos.
 }
@@ -33,6 +33,9 @@ const validarFormulario = (e) => {
             break;
         case "inputApellidos":
             validarCampo(regex.nombre, e.target);
+            break;
+        case "inputTel":
+            validarCampo(regex.telefono, e.target);
             break;
         case "inputEmail":
             validarCampo(regex.correo, e.target);
