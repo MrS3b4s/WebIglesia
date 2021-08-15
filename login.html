@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Comuniadd Proposito</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Comunidad Proposito</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        </div>
+    </nav>
+
+
+    <header class="masthead">
+        <section class="container px-4 px-lg-5 h-100">
+            <article class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <article class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Iniciar Sesión</h1>
+                    <hr class="divider" />
+                </article>
+                <article class="col-lg-8 align-self-baseline">
+
+                    <form method="GET" action="indexLogged.html">
+                        <article class="col-12 col-lg-8 offset-0 offset-lg-2">
+                            <article class="mb-3 row">
+                                <label for="staticEmail" class="col-12 text-light col-form-label">Email</label>
+                                <article class="col-12">
+                                    <input type="email" class="form-control" id="staticEmail"
+                                        placeholder="email@example.com">
+                                </article>
+                            </article>
+                            <article class="mb-3 row">
+                                <label for="inputPassword" class="col-12 text-light col-form-label">Contraseña</label>
+                                <article class="col-12">
+                                    <input type="password" class="form-control" id="inputPassword"
+                                        placeholder="********">
+                                </article>
+                            </article>
+                        </article>
+
+                        <button type="submit" class="btn btn-primary btn-xl">Iniciar Sesión</button>
+                    </form>
+
+                    <article class="row text-light mt-3">
+                        <p>
+                            ¿No tienes cuenta? <a href="registrarse.html">Registrate aquí.</a>
+                        </p>
+                    </article>
+
+                </article>
+            </article>
+        </section>
+    </header>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div>
+        </div>
+    </footer>
+
+    <!--Modal Login-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="">Inicia sesión o registrate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        href="#Registro">Registrarse</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" href="#Peticiones">Iniciar
+                        Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var modalLogin = document.getElementById('modalLogin')
+        modalLogin.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget
+            var recipient = button.getAttribute('data-bs-whatever')
+            var modalTitle = modalLogin.querySelector('.modal-title')
+            var modalBodyInput = modalLogin.querySelector('.modal-body input')
+
+            modalTitle.textContent = 'New message to ' + recipient
+            modalBodyInput.value = recipient
+        })
+    </script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
