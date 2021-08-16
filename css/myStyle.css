@@ -1,15 +1,16 @@
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:50%;
-    position:relative;
-    height:0;
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .imagenFondo {
@@ -22,3 +23,12 @@
     background-size: cover;
 }
 
+.esquinasRedondeadas {
+    border-radius: 15px;
+}
+
+.sombraCards {
+    -webkit-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.54);
+    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.54);
+}
