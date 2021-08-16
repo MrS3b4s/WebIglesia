@@ -5,7 +5,7 @@ const inputs = document.querySelectorAll('#formulario input');
 const regex = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/,
+	password: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-.]).{8,}$/,
     //Al menos un dígito, (?=.*?[0-9])
     //Al menos una letra minúscula en inglés, (?=.*?[a-z])
     //Al menos una letra mayúscula en inglés ,(?=.*?[A-Z])

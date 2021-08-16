@@ -6,133 +6,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Registrarse</title>
+    <title>Comunidad Proposito</title>
 
-   <!-- Favicon-->
-   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-   <!-- Bootstrap Icons-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-   <!-- Google fonts-->
-   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-       rel="stylesheet" type="text/css" />
-   <!-- SimpleLightbox plugin CSS-->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-   <!-- Core theme CSS (includes Bootstrap)-->
-   <link href="css/styles.css" rel="stylesheet" />
-   <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="icon" href="images/logo.jpg">
 
-    
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
+    </script>
+
 </head>
 
-<body id="page-top" >
-    <div class="row">
-        <div class="container col-12 col-lg-4 offset-lg-4 shadow-lg p-4 mt-5 rounded-3">
-            
-            <div class="row">
-                <form action="" method="get" id="formulario">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h4>Registrarse</h4>
-                        </div>
-                    </div>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Comunidad Proposito</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        </div>
+    </nav>
 
-                    <hr class="text-primary">
-                    
-                    <div class="row">
-                        <div class="col-12 col-md-5">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="inputNombre"  name="inputNombre"
-                                    placeholder="name@example.com" required>
-                                <label for="inputNombre">Nombre</label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="inputApellidos" name="inputApellidos"
-                                    placeholder="name@example.com" required>
-                                <label for="inputApellidos">Apellidos</label>
-                            </div>
-                        </div>
-                    </div>
+
+    <header class="masthead">
+        <section class="container px-4 px-lg-5 h-100 ">
+            <article class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center ">
+                <article class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold text-center">Registrarse</h1>
+                    <hr class="divider" />
+                </article>
+                <article class="col-lg-8 align-self-baseline">
 
                     <div class="row">
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="inputEmail" name="inputEmail"
-                                    placeholder="name@example.com" required>
-                                <label for="inputEmail">Email address</label>
-                                <div id="emailHelp" class="form-text">example@mail.com</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="inputPassword" name="inputPassword"
-                                    placeholder="Password" required>
-                                <label for="inputPassword">Password</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-12">
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="inputPassword2" name="inputPassword2"
-                                    placeholder="Password" required>
-                                <label for="inputPassword2 ">Confirm Password</label>
-                                <div id="emailHelp" class="form-text">
-                                    Asegurese de que su contraseña cumpla con los requisitos de seguridad:
-                                    <br>
-                                    <ul>
-                                        <li>Combinación de mayúsculas y minúsculas.</li>
-                                        <li>Extensión 8 carácteres mínimo.</li>
-                                        <li>Al menos un carácter especial (* ¡ ¿ - .)</li>
-                                    </ul>
-                                  
+                        <form action="" method="get" id="formulario">
+                            
+        
+                            
+                            <div class="row">
+                                <div class="col-12 col-md-5">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="inputNombre"  name="inputNombre"
+                                            placeholder="name@example.com" required>
+                                        <label for="inputNombre">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="inputApellidos" name="inputApellidos"
+                                            placeholder="name@example.com" required>
+                                        <label for="inputApellidos">Apellidos</label>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="form-check form-switch my-4">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Acepto términos y condiciones</label> <br>
-                                <a href="#" class="text-muted">Terminos y condiciones</a>
+        
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                                            placeholder="name@example.com" required>
+                                        <label for="inputEmail">Correo</label>
+                                    </div>
+                                </div>
                             </div>
-
-                        </div>
-
+        
+                            <div class="row">
+        
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="inputPassword" name="inputPassword"
+                                            placeholder="Password" required>
+                                        <label for="inputPassword">Contraseña</label>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="row">
+        
+                                <div class="col-12">
+                                    <div class="form-floating mb-3 ">
+                                        <input type="password" class="form-control" id="inputPassword2" name="inputPassword2"
+                                            placeholder="Password" required>
+                                        <label for="inputPassword2 ">Confirmar contraseña</label>
+                                        <div id="emailHelp" class="form-text text-white">
+                                            Asegurese de que su contraseña cumpla con los requisitos de seguridad:
+                                            <br>
+                                            <ul>
+                                                <li>Combinación de mayúsculas y minúsculas.</li>
+                                                <li>Extensión 8 carácteres mínimo.</li>
+                                                <li>Al menos un carácter especial (* ¡ ¿ - . @)</li>
+                                            </ul>
+                                          
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-check form-switch my-4">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label text-white" for="flexSwitchCheckDefault">Acepto términos y condiciones</label> <br>
+                                        <a href="#" class="text-muted">Terminos y condiciones</a>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="row">
+        
+                                <div class="col-12">
+        
+                                    <button type="submit" class="btn btn-success">Continuar</button>
+        
+                                </div>
+        
+                            </div>
+        
+        
+                        </form>
                     </div>
 
-                    <div class="row">
+                </article>
+            </article>
+        </section>
+    </header>
 
-                        <div class="col-12">
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2021 - Error 404</div>
+        </div>
+    </footer>
 
-                            <button type="submit" class="btn btn-success">Continuar</button>
+    <!--Modal Login-->
 
-                        </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="">Inicia sesión o registrate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-                    </div>
-
-
-                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        href="#Registro">Registrarse</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" href="#Peticiones">Iniciar
+                        Sesión</button>
+                </div>
             </div>
         </div>
     </div>
 
-   
-    <!-- Bootstrap core JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
-    <!-- Script validaciones-->
-    <script src="js/validacionInciarSesion.js"></script>
+
+    <script>
+        var modalLogin = document.getElementById('modalLogin')
+        modalLogin.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget
+            var recipient = button.getAttribute('data-bs-whatever')
+            var modalTitle = modalLogin.querySelector('.modal-title')
+            var modalBodyInput = modalLogin.querySelector('.modal-body input')
+
+            modalTitle.textContent = 'New message to ' + recipient
+            modalBodyInput.value = recipient
+        })
+    </script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script src="js/validacionRegistrarse.js"></script>
 </body>
 
 </html>
