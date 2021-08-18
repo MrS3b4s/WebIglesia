@@ -44,8 +44,8 @@ cargarOraciones = document.querySelector('.cargarOraciones');
 
 function cargarOracion(objOraciones) {
     objOraciones.forEach(oracion => {
-        const Titulo = oracion.Titulo
-        const descripccion = oracion.Titulo
+        const Titulo = oracion.Titulo;
+        const descripccion = oracion.descripccion;
         const img = oracion.imagen;
         console.log("entro")
         const card = document.createElement('article');

@@ -44,7 +44,7 @@ cargarTestimonios = document.querySelector('.cargarTestimonio');
 function cargarTestimonio(objTestimonio) {
     objTestimonio.forEach(Testimonio => {
         const Titulo = Testimonio.Titulo
-        const descripccion = Testimonio.Titulo
+        const descripccion = Testimonio.descripccion
         const img = Testimonio.imagen;
         console.log("entro")
         const card = document.createElement('article');
