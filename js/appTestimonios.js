@@ -65,7 +65,7 @@ function cargarTestimonio(objTestimonio) {
                             <button type="button" class="btn btn-sm btn-outline-secondary">Me
                                 gusta</button>
                             <button type="button"
-                                class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comentar</button>
+                                class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalTestimonio">Comentar</button>
                            
                         </div>
                         <small class="text-muted">9 mins</small>

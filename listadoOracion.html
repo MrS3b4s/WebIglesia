@@ -43,7 +43,7 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="grupoOracion.html">Inicio</a>
                     </li>
-       
+
                     </li>
                     <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                         <li class="nav-item dropdown">
@@ -53,7 +53,7 @@
                                 <li><a class="dropdown-item" href="listadoOracion.html">Oraciones</a></li>
                                 <li><a class="dropdown-item" href="registrarPeticion.html">Crear Oración</a></li>
                                 <li><a class="dropdown-item" href="#!">Mis Oraciones</a></li>
-                              
+
                             </ul>
                         </li>
                     </ul>
@@ -63,9 +63,10 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">Testimonios</i></a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
+                                <li><a class="dropdown-item" href="agregarTestimonio.html">Crear Testimonio</a></li>
                                 <li><a class="dropdown-item" href="#!">Mis Testimonios</a></li>
-                            
-                               
+
+
                             </ul>
                         </li>
                     </ul>
@@ -93,7 +94,7 @@
     <div class="imagenFondo">
         <div class="row">
             <div class="col-12  bg-primary my-5">
-                
+
             </div>
         </div>
     </div>
@@ -101,7 +102,7 @@
     <!-- Oraciones -->
     <section class=" bg-white text-primary " id="peticiones">
 
-        
+
 
         <div class="row justify-content-center">
 
@@ -125,62 +126,68 @@
 
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Testimonio</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row imagenFondoComentarioTestimonio">
-                    
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Testimonio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="modal-title text-primary">Titulo del Testimonio</h3>
+                <div class="modal-body">
+                    <div class="row imagenFondoComentarioTestimonio">
+
                     </div>
-                    
-                    <div class="col-12">
-                        <p for="comentario">Descripción de la oración, en este espacio aparecerá el motivo que el usuario haya escrito.</p>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="modal-title text-primary">Titulo del Testimonio</h3>
+                        </div>
+
+                        <div class="col-12">
+                            <p for="comentario">Descripción de la oración, en este espacio aparecerá el motivo que el
+                                usuario haya escrito.</p>
+                        </div>
                     </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <p for="comentario">Comentarios</p>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h6><strong>Juergen Segura</strong> <span class="text-muted"> - Comentó hace 9 horas</span>
+                            </h6>
+                            <p for="comentario">Este es un comentario muy extenso escrito con mucha atención y detalle.
+                            </p>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h6><strong>Sebastián Rodríguez</strong> <span class="text-muted"> - Comentó el
+                                    17/8/2021</span></h6>
+                            <p for="comentario">Este es un segundo comentario que al igual que el anterior se escribió
+                                extenso, con mucha atención y detalle.</p>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" name="comentario" id="comentario" rows="5"
+                                placeholder="Pon tu comentario aqui..." required></textarea>
+                        </div>
+                    </div>
+
+
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-12">
-                        <p for="comentario">Comentarios</p>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <h6><strong>Juergen Segura</strong> <span class="text-muted"> - Comentó hace 9 horas</span></h6>
-                        <p for="comentario">Este es un comentario muy extenso escrito con mucha atención y detalle.</p>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <h6><strong>Sebastián Rodríguez</strong> <span class="text-muted"> - Comentó el 17/8/2021</span></h6>
-                        <p for="comentario">Este es un segundo comentario que al igual que el anterior se escribió extenso, con mucha atención y detalle.</p>
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control" name="comentario" id="comentario"  rows="5" placeholder="Pon tu comentario aqui..." required></textarea>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Comentar</button>
                 </div>
-                
-                
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Comentar</button>
             </div>
         </div>
     </div>
-</div>
- 
 
-   
+
+
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
             <div class="small text-center text-muted">Copyright &copy; 2021 - Comunidad Propósito</div>
         </div>
-        
+
     </footer>
 
 
