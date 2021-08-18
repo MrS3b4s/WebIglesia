@@ -54,7 +54,7 @@ function cargarOracion(objOraciones) {
         card.classList.add('mb-3')
         card.innerHTML = `
             <div class="card shadow-sm">
-                <img src="${img}" class="card-img-top" alt="Imagen Oracion">
+                <img src="${img}" class="card-img-top" alt="Imagen Oracion"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 
                 <div class="card-body"e>
                     <h6>${Titulo}</h6>
