@@ -49,8 +49,8 @@ function cargarTestimonio(objTestimonio) {
         console.log("entro")
         const card = document.createElement('article');
         card.classList.add('col-6');
-        card.classList.add('col-lg-4')
-        card.classList.add('mb-3')
+        card.classList.add('col-lg-4');
+        card.classList.add('mb-3');
         card.innerHTML = `
             <div class="card shadow-sm">
                 <img src="${img}" class="card-img-top" alt="Imagen Testimonio">
@@ -65,7 +65,8 @@ function cargarTestimonio(objTestimonio) {
                             <button type="button" class="btn btn-sm btn-outline-secondary">Me
                                 gusta</button>
                             <button type="button"
-                                class="btn btn-sm btn-outline-secondary">Comentar</button>
+                                class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Comentar</button>
+                           
                         </div>
                         <small class="text-muted">9 mins</small>
                     </div>

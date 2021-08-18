@@ -43,7 +43,7 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="grupoOracion.html">Inicio</a>
                     </li>
-       
+
                     </li>
                     <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                         <li class="nav-item dropdown">
@@ -53,7 +53,7 @@
                                 <li><a class="dropdown-item" href="listadoOracion.html">Oraciones</a></li>
                                 <li><a class="dropdown-item" href="registrarPeticion.html">Crear Oración</a></li>
                                 <li><a class="dropdown-item" href="#!">Mis Oraciones</a></li>
-                              
+
                             </ul>
                         </li>
                     </ul>
@@ -64,8 +64,8 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
                                 <li><a class="dropdown-item" href="#!">Mis Testimonios</a></li>
-                            
-                               
+
+
                             </ul>
                         </li>
                     </ul>
@@ -90,18 +90,18 @@
         </div>
     </nav>
     <!-- Masthead-->
-    
+
     <div class="imagenFondoTestimonio">
         <div class="row">
             <div class="col-12  bg-primary my-5">
-                
+
             </div>
         </div>
     </div>
 
     <section class=" bg-white text-primary " id="peticiones">
 
-        
+
 
         <div class="row justify-content-center">
 
@@ -129,6 +129,29 @@
             <div class="small text-center text-muted">Copyright &copy; 2021 - Comunidad Propósito</div>
         </div>
     </footer>
+
+    <!--Modal Comentario-->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Agrega Tu Comentario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p for="comentario">Comentario</p>
+                    <textarea name="comentario" id="comentario" cols="113" rows="10" placeholder="Pon tu comentario aqui..." required></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Comentar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
