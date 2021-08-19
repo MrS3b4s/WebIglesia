@@ -1,14 +1,12 @@
+cargarMisOraciones = document.querySelector('.cargarMisOraciones');
 
 
-cargarOraciones = document.querySelector('.cargarOraciones');
-
-
-
-function cargarOracion(objOraciones) {
+function cargarMiOracion(objOraciones) {
     objOraciones.forEach(oracion => {
         const Titulo = oracion.Titulo;
         const descripccion = oracion.descripccion;
         const img = oracion.imagen;
+        console.log("entro");
         const card = document.createElement('article');
         card.classList.add('col-6');
         card.classList.add('col-lg-4')
@@ -28,21 +26,21 @@ function cargarOracion(objOraciones) {
                                 gusta</button>
                             <button type="button"
                                 class="btn btn-sm btn-outline-secondary">Oraré</button>
+                            <button type="button"
+                                class="btn btn-sm btn-outline-danger">Eliminar</button>
                         </div>
                         <small class="text-muted">9 mins</small>
                     </div>
                 </div>
             </div>
         ` 
-        cargarOraciones.append(card);
+        cargarMisOraciones.append(card);
         
     });
 
-}
-
-
+};
 
 document.addEventListener('DOMContentLoaded', () => {
-    cargarOracion(objOraciones);
+    cargarMiOracion(objOraciones);
     
 });
