@@ -10,7 +10,7 @@ function cargarOracion(objOraciones) {
         const descripccion = oracion.descripccion;
         const img = oracion.imagen;
         const card = document.createElement('article');
-        card.classList.add('col-6');
+        card.classList.add('col-12');
         card.classList.add('col-lg-4')
         card.classList.add('mb-3')
         card.innerHTML = `

@@ -9,7 +9,7 @@ function cargarMiTestimonio(objTestimonio) {
         const img = Testimonio.imagen;
         console.log("entro")
         const card = document.createElement('article');
-        card.classList.add('col-6');
+        card.classList.add('col-12');
         card.classList.add('col-lg-4');
         card.classList.add('mb-3');
         card.innerHTML = `
