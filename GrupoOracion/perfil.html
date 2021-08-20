@@ -7,8 +7,10 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Comunidad Proposito</title>
+
+
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -18,11 +20,13 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/myStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
+
+   
 
 </head>
 
@@ -84,7 +88,7 @@
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
-                                <li><a class="dropdown-item" href="login.html">Cerrar Sesión</a></li>
+                                <li><a class="dropdown-item" href="../ComunidadProposito/login.html">Cerrar Sesión</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -136,7 +140,7 @@
                         <a class="nav-link" aria-current="page" href="controlUsuarios.html">Control Usuarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="login.html">Cerrar Sesión</a>
+                        <a class="nav-link" aria-current="page" href="../ComunidadProposito/login.html">Cerrar Sesión</a>
                     </li>
               
                 </ul>    
@@ -144,94 +148,183 @@
         </div>
     </nav>
 
+    <!-- Masthead-->
+    <div class="imagenFondoPerfil">
+        <div class="row">
+            <div class="col-12  bg-primary my-5">
+                
+            </div>
+        </div>
+    </div>
 
-    <header class="masthead">
-        <section class="container px-4 px-lg-5 h-100 ">
-            <article class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <article class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Control de Usuarios</h1>
-                    <hr class="divider" />
-                </article>
-                <article class="col-lg-8 align-self-baseline">
-
-                    <form method="GET" action="indexLogged.html">
-
-                        <div class="row mb-3">
-
-                            <div class="list-group mx-0">
-                                <label class="list-group-item d-flex gap-2">
-                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
-                                  <span>
-                                    Sebastián Rodríguez Rojas 
-                                    <small class="d-block text-muted">serodriguezroj@est.utn.ac.cr</small>
-                                  </span>
-                                </label>
-                                
-                                <label class="list-group-item d-flex gap-2">
-                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="">
-                                  <span>
-                                    Juergen Segura Chévez
-                                    <small class="d-block text-muted">jusegurache@est.utn.ac.cr</small>
-                                  </span>
-                                </label>
-                                
-                                <label class="list-group-item d-flex gap-2">
-                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="">
-                                  <span>
-                                    Jeffry Salazar Ochoa
-                                    <small class="d-block text-muted">jesalazaroch@est.utn.ac.cr</small>
-                                  </span>
-                                </label>
-                                <label class="list-group-item d-flex gap-2">
-                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
-                                  <span>
-                                    Sebastián Rodríguez Rojas 
-                                    <small class="d-block text-muted">serodriguezroj@est.utn.ac.cr</small>
-                                  </span>
-                                </label>
-                                <label class="list-group-item d-flex gap-2">
-                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="">
-                                  <span>
-                                    Juergen Segura Chévez
-                                    <small class="d-block text-muted">jusegurache@est.utn.ac.cr</small>
-                                  </span>
-                                </label>
-                                
-                                <label class="list-group-item d-flex gap-2">
-                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="">
-                                  <span>
-                                    Jeffry Salazar Ochoa
-                                    <small class="d-block text-muted">jesalazaroch@est.utn.ac.cr</small>
-                                  </span>
-                                </label>
-                                
-                              </div>
-
-                        </div>
+    
+    <div class="row py-5 px-4">
+        <div class="col-md-5 mx-auto">
+            <!-- Profile widget -->
+            <div class="bg-white shadow rounded overflow-hidden">
+                <div class="px-4 pt-0 pb-4 cover">
+                    <div class="media align-items-end profile-head">
+                        <div class="profile mr-3"><img src="../images/sebas.jpg" alt="..." width="130" class="rounded mb-2 img-thumbnail"></div>
+                       
+                    </div>
 
 
-                        <div class="row">
+                </div>
 
-                            <div class="col-12">
-
-                                <button type="submit" class="btn btn-success">Aceptar</button>
-
+              
+                
+                
+                <div class="bg-white p-4   text-center mt-5">
+                    <div class="row">   
+                        <div class="col-12 col-md-6">
+                            <div class="media-body mb-5  ">
+                                <h4 class="mt-0 mb-0">Sebastián Rodríguez</h4>
+                                <p class="small mb-4"> <i class="fas fa-map-marker-alt mr-2"></i>Tilarán</p>
                             </div>
-
                         </div>
-                    </form>
+                        <div class="col-12 col-md-6 d-flex">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <h5 class="font-weight-bold mb-0 d-block">6</h5><small class="text-muted"> <i class="bi bi-star"></i> Peticiones</small>
+                                </li>
+                                <li class="list-inline-item">
+                                    <h5 class="font-weight-bold mb-0 d-block">21</h5><small class="text-muted"> <i class="bi bi-emoji-smile"></i> Oraré</small>
+                                </li>
+                                <li class="list-inline-item">
+                                    <h5 class="font-weight-bold mb-0 d-block">8</h5><small class="text-muted"> <i class="bi bi-hand-thumbs-up"></i> Me gusta</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    
+                   
+                </div>
+                <div class="px-4 py-3">
+                    <h5 class="mb-0">Acerca de mí</h5>
+                    <div class="p-4 rounded shadow-sm bg-light">
+                        <p class="font-italic mb-0">Hijo de Diós</p>
+                        <p class="font-italic mb-0">Estudiante en la UTN</p>
+                        <p class="font-italic mb-0">Ingeniero en Tecnologías de la información</p>
+                       
+                    </div>
+                </div>
+                <div class="py-4 px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h5 class="mb-0">Oraciones</h5><a href="#" class="btn btn-link text-muted">Todo</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-2 pr-lg-1">
+                            <div class="card shadow-sm">
+                                <img src="../images/thumbnails/5.jpg" class="card-img-top" alt="...">
 
-                </article>
-            </article>
-        </section>
-    </header>
+                                <div class="card-body">
+                                    <h6>Titulo de la oración</h6>
+                                    <p class="card-text text-dark">Aquí se escribirá la descripción de la oración.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Me
+                                                gusta</button>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">Oraré</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2 pr-lg-1">
+                            <div class="card shadow-sm">
+                                <img src="../images/thumbnails/6.jpg" class="card-img-top" alt="...">
+
+                                <div class="card-body">
+                                    <h6>Titulo de la oración</h6>
+                                    <p class="card-text text-dark">Aquí se escribirá la descripción de la oración.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Me
+                                                gusta</button>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">Oraré</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2 pr-lg-1">
+                            <div class="card shadow-sm">
+                                <img src="../images/thumbnails/3.jpg" class="card-img-top" alt="...">
+
+                                <div class="card-body">
+                                    <h6>Titulo de la oración</h6>
+                                    <p class="card-text text-dark">Aquí se escribirá la descripción de la oración.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Me
+                                                gusta</button>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">Oraré</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-2 pr-lg-1">
+                            <div class="card shadow-sm">
+                                <img src="../images/thumbnails/4.jpg" class="card-img-top" alt="...">
+
+                                <div class="card-body">
+                                    <h6>Titulo de la oración</h6>
+                                    <p class="card-text text-dark">Aquí se escribirá la descripción de la oración.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">Me
+                                                gusta</button>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">Oraré</button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div>
+            <div class="small text-center text-muted">Copyright &copy; 2021 - Comunidad Propósito</div>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--Modal Login-->
 
@@ -243,7 +336,20 @@
                     <h5 class="">Inicia sesión o registrate</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="staticEmail" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="********">
+                        </div>
+                    </div>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                         href="#Registro">Registrarse</button>
@@ -254,6 +360,8 @@
         </div>
     </div>
 
+
+     
 
 
     <script>
@@ -274,12 +382,16 @@
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 </body>
 
 </html>

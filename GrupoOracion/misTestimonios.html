@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Comunidad Proposito</title>
+    <title>Comunidad Propósito</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -18,13 +18,11 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/myStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
-
-
 
 </head>
 
@@ -86,7 +84,7 @@
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
-                                <li><a class="dropdown-item" href="login.html">Cerrar Sesión</a></li>
+                                <li><a class="dropdown-item" href="../ComunidadProposito/login.html">Cerrar Sesión</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -145,78 +143,97 @@
             </div>
         </div>
     </nav>
+    <!-- Masthead-->
+
+    <div class="imagenFondoTestimonio">
+        <div class="row">
+            <div class="col-12  bg-primary my-5">
+
+            </div>
+        </div>
+    </div>
+
+    <section class=" bg-white text-primary " id="peticiones">
 
 
-    <header class="masthead">
-        <section class="container px-4 px-lg-5 h-100 ">
-            <article class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <article class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Crear Testimonio</h1>
-                    <hr class="divider" />
-                </article>
-                <article class="col-lg-8 align-self-baseline">
 
-                    <form method="GET" action="testimonios.html" id="formulario">
+        <div class="row justify-content-center">
 
-                        <hr class="text-primary">
-
-                        <div class="row mb-2">
-                            <div class="col-12">
-                                <label for="inputTitulo" class="form-label text-white">Título</label>
-                                <input type="text" class="form-control" id="inputTitulo" name="inputTitulo"
-                                    placeholder="Titulo de su testimonio" required>
-                            </div>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row  mt-5">
+                        <div class="col-12 text-center mb-3">
+                            <h1>Mis Testimonios</h1>
                         </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 cargarMisTestimonios">
 
-                        <div class="row mb-2">
-                            <div class="col-12">
-                                <label for="inputDescripcion" class="form-label text-white">Descripción</label>
-                                <textarea class="form-control" id="inputDescripcion" name="inputDescripcion"
-                                    placeholder="Descripcion" rows="5" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="row mb-2">
-                            <div class="col-12">
-                                <label for="inputFile" class="form-label text-white">Imagen(Opcional)</label>
-                                <input id="inputFile" name="inputFile" class="form-control " type="file">
-                            </div>
-                            
-
-                        </div>
-
-                        <div class="row my-2">
-                            <div class="col-2">
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="inputPublicar">
-                                    <label class="form-check-label text-white" for="inputPublicar">Privado</label>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-                        <div class="row">
 
-                            <div class="col-12">
-
-                                <button type="submit" class="btn btn-success">Continuar</button>
-
-                            </div>
-
-                        </div>
-                    </form>
-
-                </article>
-            </article>
-        </section>
-    </header>
+        </div>
+    </section>
 
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div>
+            <div class="small text-center text-muted">Copyright &copy; 2021 - Comunidad Propósito</div>
         </div>
     </footer>
+
+    <!--Modal Comentario-->
+
+    <div class="modal fade" id="modalTestimonio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Testimonio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row imagenFondoComentarioTestimonio">
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="modal-title text-primary">Titulo del Testimonio</h3>
+                        </div>
+                        
+                        <div class="col-12">
+                            <p for="comentario">Descripción del Testimonio, en este espacio aparecerá el motivo que el usuario haya escrito.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <p for="comentario">Comentarios</p>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h6><strong>Juergen Segura</strong> <span class="text-muted"> - Comentó hace 9 horas</span></h6>
+                            <p for="comentario">Este es un comentario muy extenso escrito con mucha atención y detalle.</p>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <h6><strong>Sebastián Rodríguez</strong> <span class="text-muted"> - Comentó el 17/8/2021</span></h6>
+                            <p for="comentario">Este es un segundo comentario que al igual que el anterior se escribió extenso, con mucha atención y detalle.</p>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" name="comentario" id="comentario"  rows="5" placeholder="Pon tu comentario aqui..." required></textarea>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Comentar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -239,16 +256,15 @@
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-    <script src="js/validarPeticion.js"></script>
-
-    
+    <script src="../js/objetos.js"></script>
+    <script src="../js/appMisTestimonios.js"></script>
 </body>
 
 </html>
