@@ -1,6 +1,7 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+const alerta = document.querySelector('.alerta');
 
 const regex = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -83,7 +84,14 @@ inputs.forEach((input) => {
 });
 
 formulario.addEventListener('submit', (e) => {
-	e.preventDefault
-
 	
+    if(validaciones.inputApellidos === false || validaciones.inputEmail === false || 
+        validaciones.inputNombre === false || validaciones.inputPassword === false || 
+        validaciones.inputPassword2 === false) {
+            alert("Faltan datos!")
+    }else{
+        alert("Registro exitoso!")
+    }
+
 });
+
